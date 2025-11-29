@@ -3,12 +3,14 @@ import { motion } from "framer-motion";
 
 const skillList = [
   { name: "Angular", level: "Expert" },
-  { name: "React", level: "Intermediate" },
-  { name: "TypeScript", level: "Good" },
+  { name: "TypeScript", level: "Expert" },
   { name: "JavaScript", level: "Expert" },
   { name: "HTML & CSS", level: "Expert" },
-  { name: "System Design", level: "Learning" },
-  { name: "Algorithms", level: "Practicing" },
+  { name: "React", level: "Intermediate" },
+  { name: "Node.js", level: "Intermediate" },
+  { name: "Data Structures & Algorithms", level: "Practicing" },
+  { name: "System Design", level: "Learning" },  
+  { name: "AI/ML", level: "Learning" },
 ];
 
 export default function Skills() {

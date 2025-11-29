@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FiArrowRight } from "react-icons/fi";
+import profilePic from '../assets/srikaran_pic.jpg';
 
 export default function Hero() {
   return (
@@ -24,7 +25,7 @@ export default function Hero() {
           <p className="mt-4 text-gray-300 max-w-xl mx-auto md:mx-0 text-lg">
             Frontend Engineer specializing in{" "}
             <span className="font-semibold text-white">Angular & React</span>.  
-            I build scalable, performant & beautiful interfaces.
+            Delivering performant, scalable, and polished interfaces for top product experiences.
           </p>
 
           <div className="mt-8 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
@@ -55,15 +56,20 @@ export default function Hero() {
             w-64 h-64 md:w-80 md:h-80 
             rounded-3xl border-2 border-blue-600 
             bg-gray-800 shadow-[0_0_30px_rgba(0,120,255,0.3)]
-            flex items-center justify-center
+            flex items-center justify-center 
           ">
-            <div className="
+            {/* <div className="
               w-32 h-32 md:w-40 md:h-40 
               rounded-full border-2 border-blue-500 
               bg-gray-900 flex items-center justify-center
             ">
               <span className="text-white font-bold text-2xl md:text-3xl">SK</span>
-            </div>
+            </div> */}
+            <img 
+    src={profilePic} 
+    alt="Sri Karan" 
+    className="w-full h-full object-cover rounded-3xl"
+  />
           </div>
         </motion.div>
 

@@ -23,7 +23,7 @@ export default function About() {
         {/* Main Description */}
         <p className="mt-3 text-[#CBD5E1] leading-relaxed">
           I’m a <span className="text-[#3B82F6] font-semibold">Frontend Engineer</span>
-          with strong Angular expertise and growing React + backend skills.
+          with strong Angular expertise and growing React + backend(node.js/java/python) skills.
           I build clean, fast, scalable interfaces with a focus on performance,
           accessibility, and engineering excellence.
         </p>
@@ -35,9 +35,9 @@ export default function About() {
           <div className="p-4 rounded-xl bg-[#0D1117] border border-white/10">
             <h4 className="text-white font-semibold mb-2">Highlights</h4>
             <ul className="text-[#CBD5E1] list-disc list-inside space-y-1">
-              <li>Associate Director of UI Core Architecture @ Fitch Group</li>
-              <li>1+ years hands-on Angular development</li>
-              <li>Preparing for Amazon / FAANG frontend roles</li>
+              <li>Software Developer @ Mindgate Solutions</li>
+              <li>1.5+ years hands-on Angular development</li>
+              <li>Preparing for FAANG full-stack roles</li>
             </ul>
           </div>
 
@@ -45,10 +45,9 @@ export default function About() {
           <div className="p-4 rounded-xl bg-[#0D1117] border border-white/10">
             <h4 className="text-white font-semibold mb-2">What I Bring</h4>
             <p className="text-[#CBD5E1] leading-relaxed">
-              Component-driven UI architecture, performance optimization,
-              clean code practices, scalable design systems, and
-              strong problem-solving for product-based company interviews.
-            </p>
+  Designing and implementing component-driven UI architectures, optimizing performance, ensuring clean and maintainable code, building scalable design systems, and applying strong problem-solving skills to deliver high-quality solutions for top product-based companies.
+</p>
+
           </div>
 
         </div>

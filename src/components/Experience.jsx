@@ -3,18 +3,29 @@ import { motion } from 'framer-motion'
 
 const items = [
   {
-    title:'Associate Director, UI Core Architecture',
-    org:'Fitch Group',
-    date:'2025 - Present',
-    desc:'Leading UI platform architecture, reusable component systems, and performance engineering.'
+    title: 'Software Developer',
+    org: 'Mindgate Solutions',
+    date: 'Apr 2024 - Present',
+    desc: [
+      'Built and optimized UI modules for Corporate Banking Collection Platform using Angular, TypeScript, NgRx, and RxJS, improving performance and load time by 30%.',
+      'Developed and optimized the Payments Module enabling domestic and international fund transfers with automated currency conversion and charge calculations.',
+      'Implemented robust validation flows and refactored legacy logic, improving transaction efficiency by 20%.',
+      'Built the Cash, Cheque Deposit, and Direct Debit System enabling automated fund collection from corporate accounts.',
+      'Implemented scheduled auto-debit logic based on preferred dates and integrated validation workflows to ensure accurate deductions across multiple payment modes.',
+      'Integrated RESTful APIs for payment processing and transaction dashboards with secure authentication.',
+      'Collaborated in Agile Scrum cycles and contributed to CI/CD pipelines using Jenkins.'
+    ]
   },
-  {
-    title:'Software Engineer',
-    org:'Previous Company',
-    date:'2023 - 2024',
-    desc:'Developed enterprise frontend modules using Angular. Improved UI performance and UX workflows.'
-  }
-]
+  //   {
+//     title:'Software Engineer',
+//     org:'Previous Company',
+//     date:'2023 - 2024',
+//     desc:'Developed enterprise frontend modules using Angular. Improved UI performance and UX workflows.'
+//   }
+];
+
+
+
 
 export default function Experience() {
   return (
@@ -46,9 +57,16 @@ export default function Experience() {
               {i.org}
             </p>
 
-            <p className="mt-3 text-gray-300 leading-relaxed">
-              {i.desc}
-            </p>
+                <p className="mt-3 text-slate-300 leading-relaxed">
+                    <ul className="list-disc ml-6 mt-3 text-slate-300 space-y-2">
+                        {i.desc.map((point, idx) => (
+                            <li key={idx} className="leading-relaxed text-left">
+                                {point}
+                            </li>
+                        ))}
+                    </ul>
+                </p>
+
           </motion.div>
         ))}
       </div>

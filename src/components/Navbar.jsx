@@ -41,6 +41,13 @@ export default function Navbar() {
               {section.charAt(0).toUpperCase() + section.slice(1)}
             </a>
           ))}
+                  <a
+                      href="https://drive.google.com/file/d/1-tg9ecKtNyCsi68XWWwSxwXOyB4on9ny/view?usp=sharing"
+                      download
+                      className="px-4 py-2 rounded-md bg-green-500 text-white font-medium hover:bg-green-600 transition"
+                  >
+                      Download Resume
+                  </a>
           <a
             href="#contact"
             className="px-4 py-2 rounded-md bg-cyan-400 text-gray-900 hover:brightness-110 transition"
@@ -78,6 +85,13 @@ export default function Navbar() {
                 {section.charAt(0).toUpperCase() + section.slice(1)}
               </a>
             ))}
+            <a
+                          href="https://drive.google.com/file/d/1-tg9ecKtNyCsi68XWWwSxwXOyB4on9ny/view?usp=sharing"
+                          download
+                          className="px-4 py-2 rounded-md bg-green-500 text-white font-medium hover:bg-green-600 transition"
+                      >
+                          Download Resume
+            </a>
             <a
               href="#contact"
               className="mt-2 inline-block px-4 py-2 rounded-md bg-cyan-400 text-gray-900 hover:brightness-110 transition"
