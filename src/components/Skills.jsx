@@ -13,7 +13,7 @@ const skillList = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-16">
+    <section id="skills" className="py-16 blue-500">
       
       {/* Section Title */}
       <h3 className="text-3xl font-semibold mb-6">

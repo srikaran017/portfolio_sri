@@ -2,24 +2,24 @@ import React from 'react'
 import { motion } from 'framer-motion'
 
 const projects = [
-  {
-    title: 'Student App (Stucor-like)',
-    desc: 'Xerox delivery • Results portal • Stationery delivery • eBooks download',
-    tech: 'React • Node • Vite',
-    link: '#'
-  },
-  {
-    title: 'Portfolio Website',
-    desc: 'Fully responsive, animated portfolio built with Tailwind & Framer Motion.',
-    tech: 'React • Tailwind • Framer Motion',
-    link: '#'
-  },
-  {
-    title: 'Corporate Collections UI',
-    desc: 'Collection dashboard and workflow UI for fintech corporate banking system.',
-    tech: 'Angular • Java Spring',
-    link: '#'
-  }
+    {
+        title: 'Nordixone App (Startup-company)',
+        desc: 'Enterprise Applications • Staff Augmentation • Application Development Support • Services',
+        tech: 'React • Node.js',
+        link: 'https://www.nordixone.com/'
+    },
+    {
+        title: 'Makeup Artist Website',
+        desc: 'A visually elegant website showcasing a makeup artist’s portfolio, services, and client experiences.',
+        tech: 'Next.js',
+        link: '#'
+    },
+    {
+        title: 'Corporate Collections UI',
+        desc: 'Collection dashboard and workflow UI for fintech corporate banking system.',
+        tech: 'Angular • Java SpringBoot',
+        link: '#'
+    }
 ]
 
 export default function Projects() {

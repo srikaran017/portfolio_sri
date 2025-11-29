@@ -21,7 +21,7 @@ export default function Contact() {
               className="text-primary underline ml-2"
               href="mailto:your-email@example.com"
             >
-              your-email@example.com
+              srikaran017@gmail.com
             </a>
           </p>
 
@@ -39,7 +39,7 @@ export default function Contact() {
           className="p-6 rounded-2xl bg-[#0f172a] border border-white/10 shadow-sm hover:shadow-xl transition-all"
           onSubmit={(e) => {
             e.preventDefault();
-            window.location = "mailto:your-email@example.com";
+            window.location = "mailto:srikaran017@gmail.com";
           }}
         >
           <label className="block text-sm text-gray-300 font-medium">
