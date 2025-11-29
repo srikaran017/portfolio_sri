@@ -1,29 +1,73 @@
-import React from 'react'
-import { motion } from 'framer-motion'
+import React from 'react';
+import { motion } from 'framer-motion';
 import { FiArrowRight } from "react-icons/fi";
 
-export default function Hero(){
-return (
-<section id="home" className="py-12">
-<div className="md:flex items-center gap-10">
-<motion.div initial={{opacity:0,x:-30}} animate={{opacity:1,x:0}} transition={{delay:0.1}} className="flex-1">
-<h1 className="text-4xl md:text-6xl font-extrabold leading-tight">Hi, I'm <span className="text-primary">Sri Karan</span></h1>
-<p className="mt-4 text-slate-300 max-w-xl">Frontend Engineer specializing in Angular & React. Building scalable UIs and aiming for FAANG/MAANG roles. I craft performant, accessible user interfaces and love solving complex problems.</p>
-<div className="mt-6 flex gap-4">
-<a href="#projects" className="inline-flex items-center gap-2 px-5 py-3 rounded-md bg-accent text-white font-medium">See Projects <FiArrowRight/></a>
-<a href="#contact" className="inline-flex items-center gap-2 px-5 py-3 rounded-md border border-slate-700">Hire Me</a>
-</div>
-</motion.div>
-<motion.div initial={{opacity:0,scale:0.95}} animate={{opacity:1,scale:1}} transition={{delay:0.2}} className="flex-1 mt-8 md:mt-0">
-<div className="w-full h-64 md:h-80 bg-gradient-to-tr from-slate-800 to-slate-700 rounded-2xl flex items-center justify-center border border-slate-700">
-<div className="text-center">
-<div className="w-28 h-28 rounded-full bg-slate-900 border-2 border-primary mx-auto"></div>
-<h3 className="mt-4 font-semibold">UI Engineer • Open to Product Roles</h3>
-<p className="text-sm text-slate-400 mt-2">Focusing on React, Angular, performance & system design.</p>
-</div>
-</div>
-</motion.div>
-</div>
-</section>
-)
+export default function Hero() {
+  return (
+    <section
+      id="home"
+      className="py-20 px-4 bg-gray-900 rounded-2xl"
+    >
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-center gap-16">
+
+        {/* TEXT AREA */}
+        <motion.div
+          initial={{ opacity: 0, x: -40 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+          className="flex-1 text-center md:text-left"
+        >
+          <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight">
+            Hi, I'm <span className="text-blue-500">Sri Karan</span>
+          </h1>
+
+          <p className="mt-4 text-gray-300 max-w-xl mx-auto md:mx-0 text-lg">
+            Frontend Engineer specializing in{" "}
+            <span className="font-semibold text-white">Angular & React</span>.  
+            I build scalable, performant & beautiful interfaces.
+          </p>
+
+          <div className="mt-8 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+            <a
+              href="#projects"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-medium transition"
+            >
+              See Projects <FiArrowRight />
+            </a>
+
+            <a
+              href="#contact"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-gray-500 text-gray-200 font-medium hover:bg-gray-800 transition"
+            >
+              Hire Me
+            </a>
+          </div>
+        </motion.div>
+
+        {/* PROFILE IMAGE AREA */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6 }}
+          className="flex-1 flex justify-center"
+        >
+          <div className="
+            w-64 h-64 md:w-80 md:h-80 
+            rounded-3xl border-2 border-blue-600 
+            bg-gray-800 shadow-[0_0_30px_rgba(0,120,255,0.3)]
+            flex items-center justify-center
+          ">
+            <div className="
+              w-32 h-32 md:w-40 md:h-40 
+              rounded-full border-2 border-blue-500 
+              bg-gray-900 flex items-center justify-center
+            ">
+              <span className="text-white font-bold text-2xl md:text-3xl">SK</span>
+            </div>
+          </div>
+        </motion.div>
+
+      </div>
+    </section>
+  );
 }

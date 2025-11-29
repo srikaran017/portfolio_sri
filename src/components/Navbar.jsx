@@ -1,37 +1,58 @@
-import React from 'react'
-import { useState } from 'react'
-import { FiMenu, FiX } from 'react-icons/fi'
-import { motion } from 'framer-motion'
+import React, { useState } from 'react';
+import { FiMenu, FiX } from 'react-icons/fi';
+import { motion } from 'framer-motion';
 
+export default function Navbar() {
+  const [open, setOpen] = useState(false);
 
-export default function Navbar(){
-const [open, setOpen] = useState(false)
-return (
-<nav className="sticky top-0 z-50 backdrop-blur bg-black/40 border-b border-slate-800">
-<div className="container-max flex items-center justify-between py-4">
-<a href="#home" className="text-xl font-bold tracking-tight">Sri<span className="text-primary">Karan</span></a>
-<div className="hidden md:flex gap-6 items-center text-slate-200">
-<a href="#about" className="hover:text-primary">About</a>
-<a href="#skills" className="hover:text-primary">Skills</a>
-<a href="#projects" className="hover:text-primary">Projects</a>
-<a href="#experience" className="hover:text-primary">Experience</a>
-<a href="#contact" className="px-3 py-1 rounded-md bg-primary text-slate-900 font-medium">Contact</a>
-</div>
-<button className="md:hidden p-2" onClick={()=>setOpen(v=>!v)} aria-label="menu">
-{open ? <FiX size={22}/> : <FiMenu size={22}/>}
-</button>
-</div>
-{open && (
-<motion.div initial={{opacity:0,y:-8}} animate={{opacity:1,y:0}} className="md:hidden bg-black/60 border-t border-slate-800">
-<div className="px-6 py-4 flex flex-col gap-3">
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-<a href="#experience">Experience</a>
-<a href="#contact" className="mt-2 inline-block px-3 py-1 rounded-md bg-primary text-slate-900">Contact</a>
-</div>
-</motion.div>
-)}
-</nav>
-)
+  return (
+    <nav className="w-full sticky top-0 z-50 backdrop-blur-md bg-black/70 border-b border-slate-800">
+      <div className="max-w-[1280px] mx-auto px-4 md:px-8 flex items-center justify-between py-4">
+        {/* Logo */}
+        <a href="#home" className="text-2xl md:text-3xl font-bold tracking-tight text-white">
+          Sri<span className="text-primary">Karan</span>
+        </a>
+
+        {/* Desktop Menu */}
+        <div className="hidden md:flex gap-8 items-center text-slate-200 font-medium">
+          <a href="#about" className="hover:text-primary transition-colors">About</a>
+          <a href="#skills" className="hover:text-primary transition-colors">Skills</a>
+          <a href="#projects" className="hover:text-primary transition-colors">Projects</a>
+          <a href="#experience" className="hover:text-primary transition-colors">Experience</a>
+          <a href="#contact" className="px-4 py-2 rounded-md bg-primary text-blue-500 hover:brightness-110 transition">
+            Contact
+          </a>
+        </div>
+
+        {/* Mobile Menu Button */}
+        <button 
+          className="md:hidden p-2 text-white" 
+          onClick={() => setOpen(!open)} 
+          aria-label="menu"
+        >
+          {open ? <FiX size={24} /> : <FiMenu size={24} />}
+        </button>
+      </div>
+
+      {/* Mobile Menu */}
+      {open && (
+        <motion.div 
+          initial={{ opacity: 0, y: -10 }} 
+          animate={{ opacity: 1, y: 0 }} 
+          transition={{ duration: 0.2 }}
+          className="md:hidden bg-black/80 border-t border-slate-700"
+        >
+          <div className="flex flex-col gap-3 px-6 py-4 text-slate-200 font-medium">
+            <a href="#about" className="hover:text-primary transition">About</a>
+            <a href="#skills" className="hover:text-primary transition">Skills</a>
+            <a href="#projects" className="hover:text-primary transition">Projects</a>
+            <a href="#experience" className="hover:text-primary transition">Experience</a>
+            <a href="#contact" className="mt-2 inline-block px-4 py-2 rounded-md bg-primary text-slate-900 hover:brightness-110 transition">
+              Contact
+            </a>
+          </div>
+        </motion.div>
+      )}
+    </nav>
+  );
 }
