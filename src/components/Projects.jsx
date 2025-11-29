@@ -2,6 +2,12 @@ import React from 'react'
 import { motion } from 'framer-motion'
 
 const projects = [
+  {
+        title: 'Trading Workflow & Commission System',
+        desc: 'Developed a secure platform for monitoring trades, processing commissions, and supporting mediator operations with admin and customer portal.',
+        tech: 'React • Node.js',
+        link: 'https://www.masterstroke.me/'
+    },
     {
         title: 'Nordixone App (Startup-company)',
         desc: 'Enterprise Applications • Staff Augmentation • Application Development Support • Services',
@@ -14,13 +20,7 @@ const projects = [
         tech: 'Next.js',
         link: '#'
     },
-    {
-        title: 'Corporate Collections UI',
-        desc: 'Collection dashboard and workflow UI for fintech corporate banking system.',
-        tech: 'Angular • Java SpringBoot',
-        link: '#'
-    }
-]
+    ]
 
 export default function Projects() {
   return (

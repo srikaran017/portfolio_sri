@@ -45,8 +45,7 @@ export default function About() {
           <div className="p-4 rounded-xl bg-[#0D1117] border border-white/10">
             <h4 className="text-white font-semibold mb-2">What I Bring</h4>
             <p className="text-[#CBD5E1] leading-relaxed">
-  Designing and implementing component-driven UI architectures, optimizing performance, ensuring clean and maintainable code, building scalable design systems, and applying strong problem-solving skills to deliver high-quality solutions for top product-based companies.
-</p>
+Designing and building component-driven UI architectures, optimizing performance, writing clean and maintainable code, and creating scalable design systems. Strong problem-solving skills with a focus on delivering high-quality, production-ready solutions for modern product-based companies.</p>
 
           </div>
 
